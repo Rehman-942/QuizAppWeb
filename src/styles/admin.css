@@ -1,0 +1,101 @@
+/* Admin Component */
+.admin {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  .admin .admin-navbar {
+    height: 70px;
+    position: sticky;
+    background-color: #C0D037;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 700;
+    color: white;
+    top: 0;
+  }
+  
+  .admin h2 {
+    font-weight: 600;
+    font-size: x-large;
+    margin-top: 0;
+  }
+  
+  .result-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px auto;
+    width: 93%;
+    min-width: 300px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: white;
+    border-radius: 7px;
+  }
+  .result-box-wrapper {
+    margin-top: 40px;
+  }
+  
+  .admin-result {
+    display: flex;
+    flex-direction: column;
+  }
+  .admin-top {
+    font-weight: bold;
+    align-self: center;
+  }
+  .min-result {
+    display: flex;
+    gap: 15px 30px;
+    flex-wrap: wrap;
+  }
+  
+  .min-result p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    gap: 5px;
+    width: 207px;
+    text-transform: capitalize;
+  }
+
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination .page-item {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .pagination .page-link {
+    padding: 8px 12px;
+    background-color: #C0D037;
+    border: 1px solid #C0D037;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination .page-link:hover {
+    background-color: #A5B526;
+  }
+  
+  .pagination .page-link.active {
+    background-color: #A5B526;
+    pointer-events: none;
+  }
+  .admin .pagination span {
+    color: white;
+  }
+  

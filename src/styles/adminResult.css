@@ -1,0 +1,48 @@
+/* Result Box */
+.min-result-wrapper .result-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: unset;
+}
+
+.min-result-wrapper .admin-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.min-result-wrapper .admin-top {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.min-result-wrapper .min-result {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.min-result-wrapper .min-result p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    width: inherit;
+    text-transform: capitalize;
+}
+
+.admin-detail-result .quiz-container{
+margin: auto;
+}
+
+.admin-detail-result .pagination span {
+    color: black;
+}

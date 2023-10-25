@@ -1,0 +1,118 @@
+/* quiz.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    background-color: #C0D037;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .navbar .quiz-heading {
+    font-size: 20px;
+    margin-top: 1vw;
+  }
+
+  .quiz-container {
+    background-color: #f0f0f0; /* Background color for the entire quiz container */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80vw; /* Use viewport width for responsive width */
+    max-width: 800px;
+    margin: 50px 0;
+  }
+  
+  .quiz-content {
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    background-color: #fff; /* Background color for each question */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .question h2 {
+    font-size: 1.5vw; /* Use viewport width for responsive font size */
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .question ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .question ul li {
+    margin: 1vw 0;
+    padding: 1vw;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1vw;
+    display: flex;
+    gap: 1.2vw;
+    cursor: pointer;
+    align-items: center;
+  }
+  .question ul label{
+    cursor: pointer;
+  }
+  .question ul input{
+    cursor: pointer;
+    width: 1.2vw;
+    height: 1.2vw;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    cursor: pointer;
+    margin: 0 1vw; /* Use viewport width for responsive margin */
+    padding: 1vw 3vw; /* Use viewport width for responsive padding */
+    background-color: #C0D037;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1vw; /* Use viewport width for responsive font size */
+    transition: background-color 0.2s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #88932B;
+  }
+  
+  .pagination button:disabled {
+    cursor: not-allowed;
+    background-color: #ccc;
+  }
+  
+  .pagination span {
+    display: flex;
+    align-items: center;
+    font-size: 1vw; /* Use viewport width for responsive font size */
+    font-weight: bold;
+    color: #333;
+  }
+  

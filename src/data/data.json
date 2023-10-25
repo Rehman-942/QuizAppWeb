@@ -1,0 +1,274 @@
+{
+  "boldness": [
+    {
+      "question": "When faced with a new and challenging opportunity, do you typically embrace it with excitement or hesitation?",
+      "options": [
+        {
+          "value": 100,
+          "text": "I embrace new opportunities with excitement."
+        },
+        { "value": 50, "text": "I approach new opportunities cautiously." },
+        {
+          "value": 0,
+          "text": "I tend to hesitate when presented with new opportunities."
+        }
+      ]
+    },
+    {
+      "question": "Have you ever taken a spontaneous trip or engaged in an unplanned adventure on a whim?",
+      "options": [
+        { "value": 100, "text": "Yes, I've done that multiple times." },
+        { "value": 50, "text": "I've done it a couple of times." },
+        { "value": 0, "text": "No, I rarely or never take spontaneous trips." }
+      ]
+    },
+    {
+      "question": "How comfortable are you with expressing your opinions, even when they differ from the majority?",
+      "options": [
+        {
+          "value": 100,
+          "text": "I'm very comfortable expressing my opinions."
+        },
+        {
+          "value": 50,
+          "text": "I'm somewhat comfortable expressing differing opinions."
+        },
+        {
+          "value": 0,
+          "text": "I'm hesitant to express opinions that differ from others."
+        }
+      ]
+    },
+    {
+      "question": "Are you open to trying new activities, even if they push you out of your comfort zone?",
+      "options": [
+        { "value": 100, "text": "Yes, I love trying new activities." },
+        {
+          "value": 50,
+          "text": "I'm open to new activities but with some caution."
+        },
+        { "value": 0, "text": "No, I prefer sticking to familiar activities." }
+      ]
+    },
+    {
+      "question": "Have you ever pursued a goal or ambition that others considered risky or unconventional?",
+      "options": [
+        {
+          "value": 100,
+          "text": "Yes, I've pursued risky or unconventional goals."
+        },
+        { "value": 50, "text": "I've pursued such goals occasionally." },
+        {
+          "value": 0,
+          "text": "No, I tend to avoid risky or unconventional goals."
+        }
+      ]
+    },
+    {
+      "question": "How do you feel about public speaking or performing in front of an audience?",
+      "options": [
+        { "value": 100, "text": "I'm comfortable and even enjoy it." },
+        { "value": 50, "text": "I'm okay with it but get nervous." },
+        {
+          "value": 0,
+          "text": "I'm uncomfortable with public speaking or performing."
+        }
+      ]
+    },
+    {
+      "question": "Would you be willing to challenge authority or established norms if you believed it was necessary?",
+      "options": [
+        {
+          "value": 100,
+          "text": "Yes, I'm willing to challenge authority or norms."
+        },
+        {
+          "value": 50,
+          "text": "I might challenge them under certain circumstances."
+        },
+        {
+          "value": 0,
+          "text": "No, I'm reluctant to challenge authority or norms."
+        }
+      ]
+    },
+    {
+      "question": "Have you ever taken significant financial or career risks to pursue your passions or dreams?",
+      "options": [
+        {
+          "value": 100,
+          "text": "Yes, I've taken major financial or career risks."
+        },
+        { "value": 50, "text": "I've taken some risks, but not major ones." },
+        { "value": 0, "text": "No, I avoid major financial or career risks." }
+      ]
+    },
+    {
+      "question": "How do you respond to setbacks or failures? Do you bounce back quickly and learn from them?",
+      "options": [
+        {
+          "value": 100,
+          "text": "Yes, I quickly recover from setbacks and learn from them."
+        },
+        {
+          "value": 50,
+          "text": "I eventually recover from setbacks and learn."
+        },
+        { "value": 0, "text": "No, setbacks tend to affect me deeply." }
+      ]
+    },
+    {
+      "question": "Are you comfortable initiating conversations with strangers or introducing yourself to new people?",
+      "options": [
+        {
+          "value": 100,
+          "text": "Yes, I'm very comfortable initiating conversations."
+        },
+        {
+          "value": 50,
+          "text": "I can initiate conversations, but I'm not always proactive."
+        },
+        {
+          "value": 0,
+          "text": "No, I'm uncomfortable initiating conversations with strangers."
+        }
+      ]
+    }
+  ],
+  "meanness": [
+    {
+      "question": "How do you typically react when someone asks for help or assistance?",
+      "options": [
+        { "value": 100, "text": "I often hesitate or decline to help." },
+        {
+          "value": 50,
+          "text": "I help when I can, but it depends on the situation."
+        },
+        { "value": 0, "text": "I'm always willing to help and offer support." }
+      ]
+    },
+    {
+      "question": "How do you handle disagreements or conflicts with others?",
+      "options": [
+        {
+          "value": 100,
+          "text": "I tend to get confrontational or defensive during conflicts."
+        },
+        {
+          "value": 50,
+          "text": "I try to find common ground, but conflicts can be difficult."
+        },
+        { "value": 0, "text": "I aim for open communication and resolution." }
+      ]
+    },
+    {
+      "question": "Are you comfortable giving constructive feedback without being hurtful or critical?",
+      "options": [
+        {
+          "value": 100,
+          "text": "No, I struggle with giving feedback without being critical."
+        },
+        {
+          "value": 50,
+          "text": "I can provide feedback, but it's not always easy."
+        },
+        {
+          "value": 0,
+          "text": "Yes, I'm skilled at providing constructive feedback."
+        }
+      ]
+    },
+    {
+      "question": "Do you consider the feelings and emotions of others before making decisions or taking actions?",
+      "options": [
+        { "value": 100, "text": "No, I often overlook others' feelings." },
+        { "value": 50, "text": "I consider them to some extent." },
+        {
+          "value": 0,
+          "text": "Yes, I prioritize others' feelings and emotions."
+        }
+      ]
+    },
+    {
+      "question": "How do you react when someone makes a mistake or does something wrong?",
+      "options": [
+        { "value": 100, "text": "I tend to blame or criticize them." },
+        {
+          "value": 50,
+          "text": "I may get frustrated, but I try to be patient."
+        },
+        { "value": 0, "text": "I offer support and understanding." }
+      ]
+    },
+    {
+      "question": "Are you empathetic and understanding of others' challenges and hardships?",
+      "options": [
+        { "value": 100, "text": "No, I struggle to empathize with others." },
+        {
+          "value": 50,
+          "text": "I try to be empathetic, but it's not always easy."
+        },
+        { "value": 0, "text": "Yes, I'm empathetic and supportive." }
+      ]
+    },
+    {
+      "question": "How do you handle situations where you have to deliver news that might be disappointing or difficult for someone?",
+      "options": [
+        { "value": 100, "text": "I tend to be blunt or insensitive." },
+        {
+          "value": 50,
+          "text": "I find it challenging, but I try to be considerate."
+        },
+        { "value": 0, "text": "I deliver the news compassionately and gently." }
+      ]
+    },
+    {
+      "question": "Are you willing to apologize when you've hurt someone's feelings or made a mistake?",
+      "options": [
+        {
+          "value": 100,
+          "text": "No, I find it hard to apologize or admit mistakes."
+        },
+        {
+          "value": 50,
+          "text": "I apologize when necessary, but it's not easy."
+        },
+        {
+          "value": 0,
+          "text": "Yes, I'm open to apologizing and making amends."
+        }
+      ]
+    },
+    {
+      "question": "How do you react when someone achieves success or accomplishes something significant?",
+      "options": [
+        {
+          "value": 100,
+          "text": "I often downplay their achievements or criticize them."
+        },
+        {
+          "value": 50,
+          "text": "I acknowledge their accomplishments, but I may feel envious."
+        },
+        { "value": 0, "text": "I genuinely celebrate their achievements." }
+      ]
+    },
+    {
+      "question": "Do you actively seek to build positive relationships and connections with others?",
+      "options": [
+        {
+          "value": 100,
+          "text": "No, I don't prioritize building relationships."
+        },
+        {
+          "value": 50,
+          "text": "I do, but I may struggle in some interactions."
+        },
+        {
+          "value": 0,
+          "text": "Yes, I value positive relationships and connections."
+        }
+      ]
+    }
+  ]
+}
