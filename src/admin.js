@@ -11,7 +11,8 @@ const Admin = () => {
   
   useEffect(() => {
     // Fetch results from the API when the component mounts
-    fetch('http://127.0.0.1:3001/api/getResults')
+    //'http://127.0.0.1:3001/api/getResults'
+    fetch('https://quiz-app-server-lyart.vercel.app/api/getResults')
       .then( (response) => response.json())
       .then((data) => {
         console.log('data.results', data)

@@ -44,7 +44,9 @@ const Quiz = () => {
             setShowResult(true);
             const saveData = { username, email:'', resultData:result};
             console.log('saveData', saveData);
-            const res = await fetch('http://127.0.0.1:3001/api/saveResult', {
+            // http://127.0.0.1:3001/api/saveResult
+            // https://quiz-app-server-lyart.vercel.app/api/saveResult
+            const res = await fetch('https://quiz-app-server-lyart.vercel.app/api/saveResult', {
                 method: 'POST',
                 body: JSON.stringify({ username, email: '', resultData: result }),
                 headers: { 'Content-Type': 'application/json' }
