@@ -3,6 +3,11 @@ import './styles/result.css';
 
 const Result = ({result, name}) => {
   const scores = result;
+  delete scores["boldness"];
+  delete scores["meanness"];
+  delete scores["disinhibition"];
+  delete scores["psychopathy"];
+  delete scores["dishonesty"];
 
   return (
     <div className="result-container">
