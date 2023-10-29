@@ -18,7 +18,6 @@ const Admin = () => {
     fetch('https://quiz-app-server-lyart.vercel.app/api/getResults')
       .then((response) => response.json())
       .then((data) => {
-        console.log('data.results', data)
         setData(data)
       }
       ) // Assuming the API returns results in the "results" field
@@ -54,7 +53,6 @@ const Admin = () => {
                     key={index}
                     onClick={() => {
                       setResult(user);
-                      console.log('user', user);
                     }}
                   >
                     <div className="admin-result">

@@ -1,14 +1,8 @@
 import React from "react";
 import './styles/result.css';
-import { useNavigate } from "react-router-dom";
 
 const Result = ({result, name}) => {
-  const navigate = useNavigate();
-  function handleBack (){
-    navigate('/');
-  };
   const scores = result;
-  console.log('results', scores);
 
   return (
     <div className="result-container">
@@ -21,7 +15,9 @@ const Result = ({result, name}) => {
             <div>{percentage}%</div> 
           </li>
         ))}
-          <div className="home" onClick={handleBack}>Back To Home</div>
+          <a href="https://yucatanblue.com/" style={{outline:"none"}}>
+            <div className="home">Back To Website
+            </div></a>
       </ul>
     </div>
     </div>

@@ -1,26 +1,27 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import "./styles/adminResult.css";
 
-const AdminResult = ({ data, setResult }) => {
+const AdminResult = ({ data }) => {
     const [currentPage, setCurrentPage] = useState(0);
     const [questionsToShow, setQuestionsToShow] = useState([]);
-    const topResult = data.result; 
-    const resultToShow = {...data.result};
-    delete resultToShow["psychopathy"];
+    const topResult = data.result;
+
+    const resultToShow = useMemo(() => {
+        const resultCopy = { ...data.result };
+        delete resultCopy["psychopathy"];
+        return resultCopy;
+    }, [data.result]);
 
     const headingRef = useRef(Object.keys(resultToShow)[currentPage]);
 
-   useEffect(() => {
-    headingRef.current = Object.keys(resultToShow)[currentPage];
-    const slicedQuestions = resultToShow[headingRef.current].questions;
-    setQuestionsToShow(slicedQuestions);
-    console.log('slicedQuestions', slicedQuestions);
-}, [currentPage, resultToShow]); // Include resultToShow in the dependency array
-
-
+    useEffect(() => {
+        headingRef.current = Object.keys(resultToShow)[currentPage];
+        const slicedQuestions = resultToShow[headingRef.current].questions;
+        setQuestionsToShow(slicedQuestions);
+    }, [currentPage, resultToShow]);
 
     const handlePageChange = (e, newPage) => {
-        window.scrollTo(0, 500)
+        window.scrollTo(0, 500);
         setCurrentPage(newPage);
         e.preventDefault();
     };

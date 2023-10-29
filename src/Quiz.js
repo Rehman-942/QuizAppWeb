@@ -122,11 +122,8 @@ const Quiz = () => {
             });
             setResult(sortedResults);
             setShowResult(true);
-            console.log('final result', sortedResults);
-            console.log('final categorizedQuestions', sortedQuestions);
             // https://quiz-app-server-lyart.vercel.app/api/saveResult
             // http://localhost:3000/api/saveResult
-            console.log(' username, email,',{ username, userEmail:email, resultData: sortedQuestions });
             const res = await fetch('https://quiz-app-server-lyart.vercel.app/api/saveResult', {
                 method: 'POST', 
                 body: JSON.stringify({ username, email, resultData: sortedQuestions }),
