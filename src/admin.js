@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './styles/admin.css';
 import AdminResult from './adminResult';
+import Login from './login.js';
 
 const itemsPerPage = 10;
 
 const Admin = () => {
+  const [logined, setLogined] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [result, setResult] = useState({});
   const [data, setData] = useState([]); // Initialize data as an empty array
-  
+
   useEffect(() => {
     // Fetch results from the API when the component mounts
-    //'http://127.0.0.1:3001/api/getResults'
+    // http://127.0.0.1:3001/api/getResults
+    // https://quiz-app-server-lyart.vercel.app/api/getResults
     fetch('https://quiz-app-server-lyart.vercel.app/api/getResults')
-      .then( (response) => response.json())
+      .then((response) => response.json())
       .then((data) => {
         console.log('data.results', data)
         setData(data)
@@ -36,56 +39,64 @@ const Admin = () => {
   };
 
   return (
-    <div className="admin">
-      <nav className="admin-navbar">Admin Panel</nav>
-      {!(Object.keys(result).length) ? (
-        <div className="admin-result">
-          <div className="result-box-wrapper">
-            {currentItems.map((user, index) => (
-              <div
-                className="result-box"
-                key={index}
-                onClick={() => {
-                  setResult(user);
-                }}
-              >
-                <div className="admin-result">
-                  <div className="admin-top">
-                    <h2>{user.username}</h2>
+    <>
+      {!logined ? <Login setLogined={setLogined} /> :
+        <div className="admin">
+          <nav className="admin-navbar">Admin Panel
+            {(Object.keys(result).length) ? <div className="admin-back" onClick={() => setResult({})} >Back</div> : ""}
+          </nav>
+          {!(Object.keys(result).length) ? (
+            <div className="admin-result">
+              <div className="result-box-wrapper">
+                {currentItems.map((user, index) => (
+                  <div
+                    className="result-box"
+                    key={index}
+                    onClick={() => {
+                      setResult(user);
+                      console.log('user', user);
+                    }}
+                  >
+                    <div className="admin-result">
+                      <div className="admin-top">
+                        <h2>{user.username}</h2>
+                        <p>{user.email}</p>
+                      </div>
+                      <div className="min-result">
+                        {Object.keys(user.result).map((value, index) => (
+                          <p key={index} style={{ fontWeight: value === 'psychopathy' ? 600 : 400 }}>
+                            {value} <span>{user.result[value].total}%</span>
+                          </p>
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                  <div className="min-result">
-                    {Object.keys(user.result).map((value, index) => (
-                      <p key={index} style={{ fontWeight: value === 'psychopathy' ? 600 : 400 }}>
-                        {value} <span>{user.result[value].total}%</span>
-                      </p>
-                    ))}
-                  </div>
-                </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <div className="pagination">
-            <button
-              onClick={(e) => handlePageChange(e, currentPage - 1)}
-              disabled={currentPage === 1}
-            >
-              Previous
-            </button>
-            <span>
-              Page {currentPage} of {totalPages}
-            </span>
-            <button
-              onClick={(e) => handlePageChange(e, currentPage + 1)}
-              disabled={currentPage === totalPages}
-            >
-              Next
-            </button>
-          </div>
+              <div className="pagination">
+                <button
+                  onClick={(e) => handlePageChange(e, currentPage - 1)}
+                  disabled={currentPage === 1}
+                >
+                  Previous
+                </button>
+                <span>
+                  Page {currentPage} of {totalPages}
+                </span>
+                <button
+                  onClick={(e) => handlePageChange(e, currentPage + 1)}
+                  disabled={currentPage === totalPages}
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          ) : (
+            <AdminResult data={result} setResult={setResult} />
+          )}
         </div>
-      ) : (
-        <AdminResult data={result} />
-      )}
-    </div>
+      }
+    </>
   );
 };
 

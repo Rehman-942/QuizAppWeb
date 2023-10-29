@@ -20,7 +20,7 @@ body {
     text-transform: capitalize;
   }
   .navbar .quiz-heading {
-    font-size: 20px;
+    font-size: x-large;
     margin-top: 1vw;
   }
 
@@ -48,7 +48,7 @@ body {
   }
   
   .question h2 {
-    font-size: 1.5vw; /* Use viewport width for responsive font size */
+    font-size: medium; /* Use viewport width for responsive font size */
     margin-bottom: 10px;
     color: #333;
   }
@@ -64,7 +64,7 @@ body {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 3px;
-    font-size: 1vw;
+    font-size: medium;
     display: flex;
     gap: 1.2vw;
     cursor: pointer;
@@ -75,8 +75,8 @@ body {
   }
   .question ul input{
     cursor: pointer;
-    width: 1.2vw;
-    height: 1.2vw;
+    width: inherit;
+    height: inherit;
   }
   
   .pagination {
@@ -95,7 +95,7 @@ body {
     color: #fff;
     border: none;
     border-radius: 3px;
-    font-size: 1vw; /* Use viewport width for responsive font size */
+    font-size: small; /* Use viewport width for responsive font size */
     transition: background-color 0.2s ease;
   }
   
@@ -111,7 +111,7 @@ body {
   .pagination span {
     display: flex;
     align-items: center;
-    font-size: 1vw; /* Use viewport width for responsive font size */
+    font-size: small; /* Use viewport width for responsive font size */
     font-weight: bold;
     color: #333;
   }

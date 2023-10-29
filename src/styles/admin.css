@@ -6,6 +6,17 @@
     padding: 20px;
     background-color: #333;
   }
+  .admin-back {
+    position: absolute;
+    top: 0;
+    left: 4vw;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
+}
   
   .admin .admin-navbar {
     height: 70px;
@@ -20,7 +31,8 @@
     top: 0;
   }
   
-  .admin h2 {
+  .admin-top h2{
+    margin: 0;
     font-weight: 600;
     font-size: x-large;
     margin-top: 0;
@@ -48,6 +60,17 @@
   .admin-top {
     font-weight: bold;
     align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw 0vw;
+    width: 80%;
+    flex-wrap: wrap;
+    margin-bottom: 3vw;
+  }
+  .admin-top p{
+    margin: 0;
+    font-size: large;
   }
   .min-result {
     display: flex;
@@ -59,7 +82,7 @@
     margin: 0;
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: small;
     gap: 5px;
     width: 207px;
     text-transform: capitalize;

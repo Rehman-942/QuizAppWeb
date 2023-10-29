@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./styles/adminResult.css";
 
-const AdminResult = ({ data }) => {
+const AdminResult = ({ data, setResult }) => {
     const [currentPage, setCurrentPage] = useState(0);
     const [questionsToShow, setQuestionsToShow] = useState([]);
-    const resultToShow = data.result;
+    const topResult = data.result; 
+    const resultToShow = {...data.result};
     delete resultToShow["psychopathy"];
 
     const headingRef = useRef(Object.keys(resultToShow)[currentPage]);
@@ -35,9 +36,9 @@ const AdminResult = ({ data }) => {
                             <h2>{data.name} Result</h2>
                         </div>
                         <div className="min-result">
-                            {Object.keys(data.result).map((value, index) => (
+                            {Object.keys(topResult).map((value, index) => (
                                 <p key={index} style={{ fontWeight: value === 'psychopathy' ? 600 : 400 }}>
-                                    {value} <span>{data.result[value].total}%</span>
+                                    {value} <span>{topResult[value].total}%</span>
                                 </p>
                             ))}
                         </div>
@@ -83,7 +84,7 @@ const AdminResult = ({ data }) => {
                             </span>
                             <button
                                 onClick={(e) => handlePageChange(e, currentPage + 1)}
-                                disabled={currentPage === totalPages}
+                                disabled={currentPage === totalPages-1}
                             >
                                 Next
                             </button>

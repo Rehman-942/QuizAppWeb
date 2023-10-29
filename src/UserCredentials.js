@@ -5,10 +5,11 @@ import './styles/userCredentials.css';
 const UsernameInput = () => {
     const navigate = useNavigate();
   const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
 
   const handleUsernameSubmit = (e) => {
     e.preventDefault();
-    navigate(`/quiz?username=${encodeURIComponent(username)}`); 
+    navigate(`/quiz?username=${encodeURIComponent(username)}&email=${encodeURIComponent(email)}`); 
   };
 
   return (
@@ -17,9 +18,16 @@ const UsernameInput = () => {
       <h1>Enter Your Name</h1>
         <input
           type="text"
-          placeholder="Username"
+          placeholder="Name"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           required
         />
         <button type="submit">Start Test</button>

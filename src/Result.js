@@ -18,7 +18,7 @@ const Result = ({result, name}) => {
         {Object.entries(scores).map(([category, percentage]) => (
           <li key={category} style={{fontWeight: category==='psychopathy'? 600:400}}>
               {category}:
-            <div>{percentage.total}%</div> 
+            <div>{percentage}%</div> 
           </li>
         ))}
           <div className="home" onClick={handleBack}>Back To Home</div>

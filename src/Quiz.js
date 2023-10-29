@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import questions from "./data/data.json";
 import Result from "./Result";
 import "./styles/quiz.css";
@@ -8,58 +8,138 @@ const Quiz = () => {
     const [showResult, setShowResult] = useState(false);
     const [currentPage, setCurrentPage] = useState(0);
     const [result, setResult] = useState({});
+    const navigate = useNavigate();
     const [questionsToShow, setQuestionsToShow] = useState([]);
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
     const username = queryParams.get("username");
+    const email = queryParams.get("email");
 
-    const headingRef = useRef(Object.keys(questions)[currentPage]);
+    const totalQuestionsPerPage = 10;
+    const desiredOrder = [
+        'boldness',
+        'meanness',
+        'disinhibition',
+        'psychopathy',
+        'linguistic',
+        "linguistic intelligence",
+        "logical-mathematical intelligence",
+        "spatial intelligence",
+        "musical intelligence",
+        "bodily-Kinesthetic intelligence",
+        "interpersonal intelligence",
+        "intrapersonal intelligence",
+        "naturalistic intelligence",
+        "existential intelligence",
+        "creative intelligence",
+        "dishonesty"
+    ];
+
+
+    // Use a ref to store the shuffled questions when on the first page
+    const shuffledQuestionsRef = useRef(null);
+
+    // Function to shuffle an array
+    function shuffleArray(array) {
+        const shuffled = array.slice(); // Copy the original array
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; // Shuffle the elements
+        }
+        return shuffled;
+    }
 
     useEffect(() => {
-        headingRef.current = Object.keys(questions)[currentPage];
-        const slicedQuestions = questions[headingRef.current];
+        // Check if this is the first page and questions have not been shuffled
+        if(!username || !email) navigate('/');
+
+        if (currentPage === 0 && !shuffledQuestionsRef.current) {
+            // Shuffle and store the questions for the first page
+            const shuffledQuestions = shuffleArray(questions);
+            shuffledQuestionsRef.current = shuffledQuestions;
+        }
+
+        // Determine the range of questions to show based on the page number
+        const startIdx = currentPage * totalQuestionsPerPage;
+        const endIdx = startIdx + totalQuestionsPerPage;
+
+        // Use the shuffled questions for this page
+        const slicedQuestions = shuffledQuestionsRef.current.slice(startIdx, endIdx);
         setQuestionsToShow(slicedQuestions);
-    }, [currentPage]);
+    }, [currentPage, username, email, navigate]);
 
     const handlePageChange = async (e, newPage) => {
         window.scrollTo(0, 0);
-        result[headingRef.current] = { total: 0, questions: questionsToShow };
-        questionsToShow.map((question) => {
-            result[headingRef.current].total += question.selectedOption / 10;
-        });
-        if (newPage === 3) {
-            result['psychopathy'] = {
-                total: (
-                    (result['boldness'].total +
-                        result['meanness'].total +
-                        result['disinhibition'].total) /
-                    3
-                ).toFixed(0),
-            };
-        }
+
         if (currentPage !== totalPages) {
             setCurrentPage(newPage);
         }
         if (newPage === totalPages) {
+            shuffledQuestionsRef.current.forEach((question) => {
+                const category = question.category;
+                const weightedValue = question.selectedOption / 10; // Adjust for the 100-point scale
+                if (!result[category]) {
+                    result[category] = 0;
+                }
+                result[category] += weightedValue; // Add the weighted value to the category
+            });
+
+            const categorizedQuestions = shuffledQuestionsRef.current.reduce((result, question) => {
+                const { category } = question;
+                if (!result[category]) {
+                    result[category] = {
+                        questions: [],
+                        total: 0, // Initialize the total result to 0
+                    };
+                }
+                result[category].questions.push(question);
+                return result;
+            }, {});
+
+            // Iterate through the results and add them to the corresponding category
+            for (const category in result) {
+                if (categorizedQuestions[category]) {
+                    categorizedQuestions[category].total = result[category];
+                }
+            }
+            const psychopathy = (
+                parseInt(((result["boldness"] + result["meanness"] + result["disinhibition"]) / 3).toFixed(0))
+            );
+            result.psychopathy = psychopathy;
+            categorizedQuestions.psychopathy = { total: psychopathy };
+            setResult(result);
+
+            const sortedResults = {};
+            const sortedQuestions = {};
+
+            desiredOrder.forEach(category => {
+                if (result[category]) {
+                    sortedResults[category] = result[category];
+                }
+                if (result[category]) {
+                    sortedQuestions[category] = categorizedQuestions[category];
+                }
+            });
+            setResult(sortedResults);
             setShowResult(true);
-            const saveData = { username, email:'', resultData:result};
-            console.log('saveData', saveData);
-            // http://127.0.0.1:3001/api/saveResult
+            console.log('final result', sortedResults);
+            console.log('final categorizedQuestions', sortedQuestions);
             // https://quiz-app-server-lyart.vercel.app/api/saveResult
+            // http://localhost:3000/api/saveResult
+            console.log(' username, email,',{ username, userEmail:email, resultData: sortedQuestions });
             const res = await fetch('https://quiz-app-server-lyart.vercel.app/api/saveResult', {
-                method: 'POST',
-                body: JSON.stringify({ username, email: '', resultData: result }),
-                headers: { 'Content-Type': 'application/json' }
-              }).catch(error => {
-                console.error('Error:', error);
-              });
-            console.log('res',  res);
+                method: 'POST', 
+                body: JSON.stringify({ username, email, resultData: sortedQuestions }),
+                headers: { 'Content-Type': 'application/json' },
+            }).catch((error) => {
+                alert('Error:', error);
+            });
+            console.log('res', res);
         }
-        setResult(result);
         e.preventDefault();
     };
 
-    const totalPages = Object.keys(questions).length;
+    const totalPages = Math.ceil(Object.keys(questions).length / totalQuestionsPerPage);
 
     // Function to handle radio button selection
     const handleOptionChange = (questionIndex, value) => {
@@ -76,7 +156,6 @@ const Quiz = () => {
                 <div className="quiz-container">
                     <nav className="navbar">
                         <div className="navbar-title">Welcome, {username}!</div>
-                        <div className="quiz-heading">{headingRef.current}</div>
                     </nav>
                     <div className="quiz-content">
                         <form onSubmit={(e) => handlePageChange(e, currentPage + 1)}>
