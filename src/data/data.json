@@ -1,6 +1,24 @@
 [
   {
     "category": "boldness",
+    "question": "When faced with a new and challenging opportunity, do you typically embrace it with excitement or hesitation?",
+    "options": [
+      {
+        "value": 100,
+        "text": "I embrace new opportunities with excitement."
+      },
+      {
+        "value": 50,
+        "text": "I approach new opportunities cautiously."
+      },
+      {
+        "value": 0,
+        "text": "I tend to hesitate when presented with new opportunities."
+      }
+    ]
+  },
+  {
+    "category": "boldness",
     "question": "Have you ever taken a spontaneous trip or engaged in an unplanned adventure on a whim?",
     "options": [
       {
@@ -176,6 +194,96 @@
       {
         "value": 0,
         "text": "I'm always willing to help and offer support."
+      }
+    ]
+  },
+  {
+    "category": "meanness",
+    "question": "How do you handle disagreements or conflicts with others?",
+    "options": [
+      {
+        "value": 100,
+        "text": "I tend to get confrontational or defensive during conflicts."
+      },
+      {
+        "value": 50,
+        "text": "I try to find common ground, but conflicts can be difficult."
+      },
+      {
+        "value": 0,
+        "text": "I aim for open communication and resolution."
+      }
+    ]
+  },
+  {
+    "category": "meanness",
+    "question": "Are you comfortable giving constructive feedback without being hurtful or critical?",
+    "options": [
+      {
+        "value": 100,
+        "text": "No, I struggle with giving feedback without being critical."
+      },
+      {
+        "value": 50,
+        "text": "I can provide feedback, but it's not always easy."
+      },
+      {
+        "value": 0,
+        "text": "Yes, I'm skilled at providing constructive feedback."
+      }
+    ]
+  },
+  {
+    "category": "meanness",
+    "question": "Do you consider the feelings and emotions of others before making decisions or taking actions?",
+    "options": [
+      {
+        "value": 100,
+        "text": "No, I often overlook others' feelings."
+      },
+      {
+        "value": 50,
+        "text": "I consider them to some extent."
+      },
+      {
+        "value": 0,
+        "text": "Yes, I prioritize others' feelings and emotions."
+      }
+    ]
+  },
+  {
+    "category": "meanness",
+    "question": "How do you react when someone makes a mistake or does something wrong?",
+    "options": [
+      {
+        "value": 100,
+        "text": "I tend to blame or criticize them."
+      },
+      {
+        "value": 50,
+        "text": "I may get frustrated, but I try to be patient."
+      },
+      {
+        "value": 0,
+        "text": "I offer support and understanding."
+      }
+    ]
+  },
+  {
+    "category": "meanness",
+    "question": "Are you empathetic and understanding of others' challenges and hardships?",
+    "options": [
+      {
+        "value": 100,
+        "text": "No, I struggle to empathize with others."
+      },
+      {
+        "value": 50,
+        "text": "I try to be empathetic, but it's not always easy."
+      },
+      {
+        "value": 0,
+        "text": "Yes, I'm empathetic and supportive."
       }
     ]
   },
@@ -432,6 +540,240 @@
     ]
   },
   {
+    "category": "linguistic intelligence",
+    "question": "Are you comfortable communicating and interacting with people from diverse backgrounds?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm comfortable communicating with diverse groups."
+      },
+      {
+        "value": 50,
+        "text": "I'm mostly comfortable, but it can be challenging."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle with diverse interactions."
+      }
+    ]
+  },
+  {
+    "category": "linguistic intelligence",
+    "question": "Do you enjoy reading books, articles, or written material regularly?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I love reading."
+      },
+      {
+        "value": 50,
+        "text": "I read occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I rarely read."
+      }
+    ]
+  },
+  {
+    "category": "linguistic intelligence",
+    "question": "Are you often the person people turn to for help with writing, editing, or proofreading tasks?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm often asked for help."
+      },
+      {
+        "value": 50,
+        "text": "Sometimes, on certain occasions."
+      },
+      {
+        "value": 0,
+        "text": "No, not really."
+      }
+    ]
+  },
+  {
+    "category": "linguistic intelligence",
+    "question": "Do you enjoy engaging in debates, discussions, or public speaking?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I enjoy it."
+      },
+      {
+        "value": 50,
+        "text": "I'm comfortable with it, but I don't seek it out."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not comfortable with public speaking."
+      }
+    ]
+  },
+  {
+    "category": "linguistic intelligence",
+    "question": "Are you able to pick up new languages relatively easily?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I learn languages quickly."
+      },
+      {
+        "value": 50,
+        "text": "I can learn languages with some effort."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle with learning new languages."
+      }
+    ]
+  },
+  {
+    "category": "linguistic intelligence",
+    "question": "Do you find it easy to use metaphors, analogies, or wordplay to explain complex concepts?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I often use them."
+      },
+      {
+        "value": 50,
+        "text": "I use them occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't use them much."
+      }
+    ]
+  },
+  {
+    "category": "linguistic intelligence",
+    "question": "How do you prefer to learn new information or concepts?",
+    "options": [
+      {
+        "value": 100,
+        "text": "By reading and studying materials."
+      },
+      {
+        "value": 50,
+        "text": "By listening to explanations and discussions."
+      },
+      {
+        "value": 0,
+        "text": "A mix of reading, listening, and discussions."
+      }
+    ]
+  },
+  {
+    "category": "linguistic intelligence",
+    "question": "Do you enjoy storytelling, either as a listener or a teller?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I love storytelling."
+      },
+      {
+        "value": 50,
+        "text": "I enjoy it occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not particularly interested."
+      }
+    ]
+  },
+  {
+    "category": "linguistic intelligence",
+    "question": "Can you easily express your emotions and feelings through writing or speaking?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm comfortable expressing emotions."
+      },
+      {
+        "value": 50,
+        "text": "I can, but it's not always easy."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle to express emotions."
+      }
+    ]
+  },
+  {
+    "category": "linguistic intelligence",
+    "question": "Are you skilled at picking up nuances in language, such as understanding sarcasm, humor, or subtle meanings?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I often understand nuances."
+      },
+      {
+        "value": 50,
+        "text": "I can grasp them to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I have difficulty with nuances."
+      }
+    ]
+  },
+  {
+    "category": "logical-mathematical intelligence",
+    "question": "Do you enjoy solving puzzles, brainteasers, or logic games?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I love them."
+      },
+      {
+        "value": 50,
+        "text": "I enjoy them occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not particularly interested."
+      }
+    ]
+  },
+  {
+    "category": "logical-mathematical intelligence",
+    "question": "When faced with a complex problem, do you feel confident in your ability to analyze it and find a solution?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm confident in my problem-solving skills."
+      },
+      {
+        "value": 50,
+        "text": "I feel reasonably confident."
+      },
+      {
+        "value": 0,
+        "text": "No, I often struggle with problem-solving."
+      }
+    ]
+  },
+  {
+    "category": "logical-mathematical intelligence",
+    "question": "Are you drawn to subjects that involve mathematics, statistics, or quantitative analysis?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm drawn to these subjects."
+      },
+      {
+        "value": 50,
+        "text": "I have some interest in them."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not interested in these subjects."
+      }
+    ]
+  },
+  {
     "category": "logical-mathematical intelligence",
     "question": "Can you easily recognize patterns, sequences, and relationships between numbers or objects?",
     "options": [
@@ -536,6 +878,1644 @@
       {
         "value": 0,
         "text": "No, I'm not comfortable with them."
+      }
+    ]
+  },
+  {
+    "category": "logical-mathematical intelligence",
+    "question": "Are you able to apply logical reasoning to everyday situations and decision-making?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I often use logical reasoning."
+      },
+      {
+        "value": 50,
+        "text": "I use it when necessary."
+      },
+      {
+        "value": 0,
+        "text": "No, I rely more on intuition."
+      }
+    ]
+  },
+  {
+    "category": "spatial intelligence",
+    "question": "When you're given directions, do you find it easy to mentally visualize the route and landmarks?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I can visualize directions easily."
+      },
+      {
+        "value": 50,
+        "text": "I can do it to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle with visualizing directions."
+      }
+    ]
+  },
+  {
+    "category": "spatial intelligence",
+    "question": "Do you enjoy activities such as drawing, painting, sculpting, or creating visual art?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I enjoy visual arts."
+      },
+      {
+        "value": 50,
+        "text": "I engage in visual arts occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not interested in visual arts."
+      }
+    ]
+  },
+  {
+    "category": "spatial intelligence",
+    "question": "Are you good at reading and creating maps, diagrams, and blueprints?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm skilled at reading and creating them."
+      },
+      {
+        "value": 50,
+        "text": "I can understand them but may need some guidance."
+      },
+      {
+        "value": 0,
+        "text": "No, I have difficulty with maps and diagrams."
+      }
+    ]
+  },
+  {
+    "category": "spatial intelligence",
+    "question": "Can you easily imagine how objects will look from different angles or perspectives?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I have a vivid imagination for spatial arrangements."
+      },
+      {
+        "value": 50,
+        "text": "I can do it to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle to visualize objects from different angles."
+      }
+    ]
+  },
+  {
+    "category": "spatial intelligence",
+    "question": "Are you skilled at assembling or building things using diagrams or instructions?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm good at assembling things."
+      },
+      {
+        "value": 50,
+        "text": "I can do it with some effort."
+      },
+      {
+        "value": 0,
+        "text": "No, I find it challenging to follow diagrams."
+      }
+    ]
+  },
+  {
+    "category": "spatial intelligence",
+    "question": "Do you often notice details in your environment, such as the arrangement of objects or changes in spatial relationships?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm observant of spatial details."
+      },
+      {
+        "value": 50,
+        "text": "I notice details occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't pay much attention to spatial details."
+      }
+    ]
+  },
+  {
+    "category": "spatial intelligence",
+    "question": "Are you drawn to activities that involve working with three-dimensional objects, such as puzzles or 3D modeling?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I enjoy working with 3D objects."
+      },
+      {
+        "value": 50,
+        "text": "I find them interesting but don't engage often."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not particularly interested."
+      }
+    ]
+  },
+  {
+    "category": "spatial intelligence",
+    "question": "Can you easily visualize how a room or space will look after rearranging furniture or making changes?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I can visualize it accurately."
+      },
+      {
+        "value": 50,
+        "text": "I can imagine it to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I have difficulty visualizing spatial changes."
+      }
+    ]
+  },
+  {
+    "category": "spatial intelligence",
+    "question": "Do you enjoy activities like architecture, interior design, or creating physical models?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm drawn to such activities."
+      },
+      {
+        "value": 50,
+        "text": "I find them interesting but haven't explored much."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not interested in these activities."
+      }
+    ]
+  },
+  {
+    "category": "spatial intelligence",
+    "question": "Can you quickly understand and interpret complex spatial relationships, such as those in geometric shapes?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I have a strong grasp of spatial relationships."
+      },
+      {
+        "value": 50,
+        "text": "I understand them reasonably well."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle with understanding complex spatial relationships."
+      }
+    ]
+  },
+  {
+    "category": "musical intelligence",
+    "question": "Do you often find yourself humming, tapping your fingers, or moving to the rhythm of music without realizing it?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I frequently do that."
+      },
+      {
+        "value": 50,
+        "text": "I do it occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't do it often."
+      }
+    ]
+  },
+  {
+    "category": "musical intelligence",
+    "question": "Are you drawn to a variety of musical genres and enjoy exploring different styles of music?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I love exploring diverse musical genres."
+      },
+      {
+        "value": 50,
+        "text": "I enjoy listening to various styles."
+      },
+      {
+        "value": 0,
+        "text": "No, I stick to my preferred genre."
+      }
+    ]
+  },
+  {
+    "category": "musical intelligence",
+    "question": "Can you distinguish between different musical instruments when listening to a song?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I can easily identify instruments."
+      },
+      {
+        "value": 50,
+        "text": "I can identify some instruments."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle to differentiate between instruments."
+      }
+    ]
+  },
+  {
+    "category": "musical intelligence",
+    "question": "Do you have a good sense of pitch, able to recognize when a note is in tune or not?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I have a strong sense of pitch."
+      },
+      {
+        "value": 50,
+        "text": "I can recognize pitch to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle with recognizing pitch."
+      }
+    ]
+  },
+  {
+    "category": "musical intelligence",
+    "question": "Have you ever played a musical instrument or sung in a choir?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I play an instrument or sing."
+      },
+      {
+        "value": 50,
+        "text": "I have played an instrument or sung in the past."
+      },
+      {
+        "value": 0,
+        "text": "No, I haven't played an instrument or sung."
+      }
+    ]
+  },
+  {
+    "category": "musical intelligence",
+    "question": "Are you able to identify changes in tempo, rhythm, and timing in a piece of music?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm skilled at recognizing musical changes."
+      },
+      {
+        "value": 50,
+        "text": "I can identify some changes."
+      },
+      {
+        "value": 0,
+        "text": "No, I have difficulty recognizing musical changes."
+      }
+    ]
+  },
+  {
+    "category": "musical intelligence",
+    "question": "Do you enjoy creating your own music, whether it's composing melodies, writing lyrics, or improvising?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I enjoy creating music."
+      },
+      {
+        "value": 50,
+        "text": "I dabble in music creation occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not interested in creating music."
+      }
+    ]
+  },
+  {
+    "category": "musical intelligence",
+    "question": "Can you memorize melodies, lyrics, or musical patterns easily?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I have a strong memory for music."
+      },
+      {
+        "value": 50,
+        "text": "I can memorize music to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle to memorize music."
+      }
+    ]
+  },
+  {
+    "category": "musical intelligence",
+    "question": "Do you often notice the background music or soundtracks in movies, TV shows, or advertisements?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I notice background music frequently."
+      },
+      {
+        "value": 50,
+        "text": "I notice it occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't pay much attention to background music."
+      }
+    ]
+  },
+  {
+    "category": "musical intelligence",
+    "question": "Are you drawn to attending live music performances, concerts, or music festivals?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I love attending live music events."
+      },
+      {
+        "value": 50,
+        "text": "I enjoy them occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not interested in attending live music events."
+      }
+    ]
+  },
+  {
+    "category": "bodily-Kinesthetic intelligence",
+    "question": "Do you enjoy participating in physical activities such as sports, dancing, or outdoor adventures?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I love physical activities."
+      },
+      {
+        "value": 50,
+        "text": "I enjoy them occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not interested in physical activities."
+      }
+    ]
+  },
+  {
+    "category": "bodily-Kinesthetic intelligence",
+    "question": "Are you skilled at using your body to create expressive movements, gestures, or dance routines?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm skilled at expressing through movement."
+      },
+      {
+        "value": 50,
+        "text": "I can express myself through movement to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not comfortable with expressive movements."
+      }
+    ]
+  },
+  {
+    "category": "bodily-Kinesthetic intelligence",
+    "question": "Can you easily learn and perform tasks that require precise hand-eye coordination, such as assembling intricate objects or performing surgical procedures (if applicable)?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I excel in tasks requiring coordination."
+      },
+      {
+        "value": 50,
+        "text": "I can perform coordinated tasks with effort."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle with tasks requiring coordination."
+      }
+    ]
+  },
+  {
+    "category": "bodily-Kinesthetic intelligence",
+    "question": "Do you have good spatial awareness and are able to navigate through physical spaces with ease?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I have excellent spatial awareness."
+      },
+      {
+        "value": 50,
+        "text": "I'm comfortable with spatial awareness."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle with spatial awareness."
+      }
+    ]
+  },
+  {
+    "category": "bodily-Kinesthetic intelligence",
+    "question": "Are you drawn to artistic activities that involve using your hands, such as painting, sculpting, or crafting?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I enjoy hands-on artistic activities."
+      },
+      {
+        "value": 50,
+        "text": "I engage in hands-on activities occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not interested in hands-on art."
+      }
+    ]
+  },
+  {
+    "category": "bodily-Kinesthetic intelligence",
+    "question": "Have you ever engaged in activities that require fine motor skills, such as playing a musical instrument or crafting intricate objects?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I have engaged in such activities."
+      },
+      {
+        "value": 50,
+        "text": "I have tried them occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I haven't tried activities requiring fine motor skills."
+      }
+    ]
+  },
+  {
+    "category": "bodily-Kinesthetic intelligence",
+    "question": "Do you enjoy learning by doing, and do you find hands-on experiences more effective for your learning?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I prefer hands-on learning."
+      },
+      {
+        "value": 50,
+        "text": "I find hands-on learning effective to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I prefer other learning methods."
+      }
+    ]
+  },
+  {
+    "category": "bodily-Kinesthetic intelligence",
+    "question": "Can you quickly adapt to new physical challenges or activities, even if you haven't done them before?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I adapt to physical challenges easily."
+      },
+      {
+        "value": 50,
+        "text": "I can adapt with some effort."
+      },
+      {
+        "value": 0,
+        "text": "No, I have difficulty adapting to new physical activities."
+      }
+    ]
+  },
+  {
+    "category": "bodily-Kinesthetic intelligence",
+    "question": "Are you skilled at mimicking movements and gestures, such as those demonstrated in dance or exercise routines?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm skilled at mimicking movements."
+      },
+      {
+        "value": 50,
+        "text": "I can mimic movements to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle with mimicking movements."
+      }
+    ]
+  },
+  {
+    "category": "bodily-Kinesthetic intelligence",
+    "question": "Do you often use gestures, body language, or physical expressions to convey emotions or communicate with others?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I frequently use physical expressions."
+      },
+      {
+        "value": 50,
+        "text": "I use physical expressions occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't use physical expressions much."
+      }
+    ]
+  },
+  {
+    "category": "interpersonal intelligence",
+    "question": "Do you often find it easy to empathize with other people's emotions and understand their perspectives?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm empathetic and understanding."
+      },
+      {
+        "value": 50,
+        "text": "I can empathize to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle with empathizing."
+      }
+    ]
+  },
+  {
+    "category": "interpersonal intelligence",
+    "question": "Are you comfortable in social situations and enjoy interacting with a diverse range of people?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm very comfortable in social settings."
+      },
+      {
+        "value": 50,
+        "text": "I'm comfortable in social settings, but I have my moments."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not comfortable in social settings."
+      }
+    ]
+  },
+  {
+    "category": "interpersonal intelligence",
+    "question": "Can you intuitively sense the moods and feelings of those around you, even without them explicitly expressing themselves?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm sensitive to others' moods."
+      },
+      {
+        "value": 50,
+        "text": "I can sense moods to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't often pick up on moods."
+      }
+    ]
+  },
+  {
+    "category": "interpersonal intelligence",
+    "question": "Are you often the person friends and family turn to for advice or emotional support?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm a good listener and advisor."
+      },
+      {
+        "value": 50,
+        "text": "People do come to me for advice sometimes."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not often sought out for advice."
+      }
+    ]
+  },
+  {
+    "category": "interpersonal intelligence",
+    "question": "Do you enjoy collaborating with others on group projects or activities?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I thrive in group collaborations."
+      },
+      {
+        "value": 50,
+        "text": "I'm comfortable with group collaborations."
+      },
+      {
+        "value": 0,
+        "text": "No, I prefer working alone."
+      }
+    ]
+  },
+  {
+    "category": "interpersonal intelligence",
+    "question": "Can you effectively resolve conflicts and mediate disagreements between others?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm skilled at conflict resolution."
+      },
+      {
+        "value": 50,
+        "text": "I can mediate conflicts to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle with conflict resolution."
+      }
+    ]
+  },
+  {
+    "category": "interpersonal intelligence",
+    "question": "Are you drawn to careers or activities that involve working closely with people, such as counseling, teaching, or team leadership?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm drawn to such careers and activities."
+      },
+      {
+        "value": 50,
+        "text": "I find them interesting but haven't pursued them."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not interested in people-oriented careers."
+      }
+    ]
+  },
+  {
+    "category": "interpersonal intelligence",
+    "question": "Do you often initiate and maintain deep, meaningful relationships with a wide range of individuals?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I have many deep relationships."
+      },
+      {
+        "value": 50,
+        "text": "I have a few deep relationships."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't typically form deep relationships."
+      }
+    ]
+  },
+  {
+    "category": "interpersonal intelligence",
+    "question": "Can you effectively gauge the needs and motivations of others, even when they don't explicitly state them?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm good at understanding others' needs."
+      },
+      {
+        "value": 50,
+        "text": "I can understand others' needs to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle to understand others' needs."
+      }
+    ]
+  },
+  {
+    "category": "interpersonal intelligence",
+    "question": "Do you enjoy participating in group activities, clubs, or social gatherings?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I love being part of group activities."
+      },
+      {
+        "value": 50,
+        "text": "I enjoy them occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not interested in group activities."
+      }
+    ]
+  },
+  {
+    "category": "intrapersonal intelligence",
+    "question": "Do you often engage in self-reflection and spend time thinking about your own thoughts, feelings, and experiences?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I frequently engage in self-reflection."
+      },
+      {
+        "value": 50,
+        "text": "I do it occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't often engage in self-reflection."
+      }
+    ]
+  },
+  {
+    "category": "intrapersonal intelligence",
+    "question": "Are you able to identify your strengths, weaknesses, and personal qualities with a high level of accuracy?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I have a good understanding of my strengths and weaknesses."
+      },
+      {
+        "value": 50,
+        "text": "I can identify some of my strengths and weaknesses."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle to identify my strengths and weaknesses."
+      }
+    ]
+  },
+  {
+    "category": "intrapersonal intelligence",
+    "question": "Can you easily recognize your emotions and understand how they influence your thoughts and behaviors?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm adept at recognizing my emotions."
+      },
+      {
+        "value": 50,
+        "text": "I can recognize emotions to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle to recognize my emotions."
+      }
+    ]
+  },
+  {
+    "category": "intrapersonal intelligence",
+    "question": "Are you comfortable with spending time alone and find it enriching rather than isolating?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I enjoy spending time alone."
+      },
+      {
+        "value": 50,
+        "text": "I'm comfortable with solitude but also enjoy socializing."
+      },
+      {
+        "value": 0,
+        "text": "No, I prefer being around others."
+      }
+    ]
+  },
+  {
+    "category": "intrapersonal intelligence",
+    "question": "Do you have a clear sense of your long-term goals, aspirations, and the direction you want your life to take?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I have a well-defined sense of purpose."
+      },
+      {
+        "value": 50,
+        "text": "I have some goals, but they're not fully defined."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm unsure about my long-term goals."
+      }
+    ]
+  },
+  {
+    "category": "intrapersonal intelligence",
+    "question": "Can you adapt your behavior and mindset to different situations and contexts, maintaining a sense of authenticity?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm adaptable while staying true to myself."
+      },
+      {
+        "value": 50,
+        "text": "I'm somewhat adaptable to different situations."
+      },
+      {
+        "value": 0,
+        "text": "No, I find it challenging to adapt my behavior."
+      }
+    ]
+  },
+  {
+    "category": "intrapersonal intelligence",
+    "question": "Have you ever pursued personal development activities like journaling, meditation, or self-help practices?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I actively engage in personal development."
+      },
+      {
+        "value": 50,
+        "text": "I've tried personal development practices occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I haven't explored personal development practices."
+      }
+    ]
+  },
+  {
+    "category": "intrapersonal intelligence",
+    "question": "Are you aware of your values and beliefs, and do you align your actions with them?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm in tune with my values and beliefs."
+      },
+      {
+        "value": 50,
+        "text": "I'm aware of my values but don't always align perfectly."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not sure about my values and beliefs."
+      }
+    ]
+  },
+  {
+    "category": "intrapersonal intelligence",
+    "question": "Do you often set aside time for self-care and prioritize your emotional well-being?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I prioritize self-care regularly."
+      },
+      {
+        "value": 50,
+        "text": "I try to practice self-care when I can."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't focus much on self-care."
+      }
+    ]
+  },
+  {
+    "category": "intrapersonal intelligence",
+    "question": "Can you describe your emotional reactions and thought processes during challenging situations with clarity?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm able to describe my reactions and thoughts."
+      },
+      {
+        "value": 50,
+        "text": "I can describe them to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I have difficulty describing my reactions and thoughts."
+      }
+    ]
+  },
+  {
+    "category": "naturalistic intelligence",
+    "question": "Do you feel a strong sense of connection and appreciation for nature and the outdoors?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I feel deeply connected to nature."
+      },
+      {
+        "value": 50,
+        "text": "I have some appreciation for nature."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't have a strong connection to nature."
+      }
+    ]
+  },
+  {
+    "category": "naturalistic intelligence",
+    "question": "Are you drawn to activities like gardening, hiking, or observing wildlife?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I enjoy engaging in outdoor activities."
+      },
+      {
+        "value": 50,
+        "text": "I find these activities interesting but don't do them often."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not interested in these activities."
+      }
+    ]
+  },
+  {
+    "category": "naturalistic intelligence",
+    "question": "Can you easily recognize different plant and animal species and their characteristics?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm knowledgeable about various species."
+      },
+      {
+        "value": 50,
+        "text": "I can identify some species."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not well-versed in identifying species."
+      }
+    ]
+  },
+  {
+    "category": "naturalistic intelligence",
+    "question": "Do you have a keen understanding of ecosystems, environmental issues, and the interdependence of living organisms?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I have a strong understanding of ecosystems."
+      },
+      {
+        "value": 50,
+        "text": "I have some knowledge about ecosystems."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't know much about ecosystems."
+      }
+    ]
+  },
+  {
+    "category": "naturalistic intelligence",
+    "question": "Do you often notice natural phenomena, such as changes in weather patterns, seasonal shifts, or geological formations?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I frequently observe natural phenomena."
+      },
+      {
+        "value": 50,
+        "text": "I notice them occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't often observe natural phenomena."
+      }
+    ]
+  },
+  {
+    "category": "naturalistic intelligence",
+    "question": "Are you interested in learning about sustainability, conservation, and ways to protect the environment?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm passionate about environmental issues."
+      },
+      {
+        "value": 50,
+        "text": "I have some interest in environmental topics."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not particularly interested in environmental issues."
+      }
+    ]
+  },
+  {
+    "category": "naturalistic intelligence",
+    "question": "Have you ever participated in activities related to environmental advocacy or conservation efforts?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I have been involved in such activities."
+      },
+      {
+        "value": 50,
+        "text": "I've participated occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I haven't been involved in such activities."
+      }
+    ]
+  },
+  {
+    "category": "naturalistic intelligence",
+    "question": "Can you easily identify different types of landscapes, such as forests, deserts, oceans, and mountains?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I can identify various landscapes."
+      },
+      {
+        "value": 50,
+        "text": "I can identify some landscapes."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle to identify different landscapes."
+      }
+    ]
+  },
+  {
+    "category": "naturalistic intelligence",
+    "question": "Do you enjoy studying and learning about the natural world through books, documentaries, or educational programs?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I enjoy learning about the natural world."
+      },
+      {
+        "value": 50,
+        "text": "I engage in such learning occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't actively seek out information about the natural world."
+      }
+    ]
+  },
+  {
+    "category": "naturalistic intelligence",
+    "question": "Do you often feel a sense of wonder and awe when observing natural beauty and phenomena?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I frequently experience awe in nature."
+      },
+      {
+        "value": 50,
+        "text": "I occasionally feel awe in nature."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't often experience awe in nature."
+      }
+    ]
+  },
+  {
+    "category": "existential intelligence",
+    "question": "Do you often contemplate abstract concepts, such as the meaning of life, the nature of reality, or the purpose of human existence?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I frequently contemplate these concepts."
+      },
+      {
+        "value": 50,
+        "text": "I engage in such contemplation occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't often contemplate these concepts."
+      }
+    ]
+  },
+  {
+    "category": "existential intelligence",
+    "question": "Are you drawn to philosophical discussions and enjoy exploring deep questions about the universe and human existence?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I enjoy philosophical discussions."
+      },
+      {
+        "value": 50,
+        "text": "I'm interested in them but don't often engage."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not particularly interested in philosophical discussions."
+      }
+    ]
+  },
+  {
+    "category": "existential intelligence",
+    "question": "Can you easily grasp complex and abstract ideas that involve thinking beyond the material world?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I can understand and engage with abstract ideas."
+      },
+      {
+        "value": 50,
+        "text": "I can understand them to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle with understanding abstract ideas."
+      }
+    ]
+  },
+  {
+    "category": "existential intelligence",
+    "question": "Have you ever explored spiritual or metaphysical beliefs, regardless of whether you subscribe to them or not?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I've explored different spiritual and metaphysical beliefs."
+      },
+      {
+        "value": 50,
+        "text": "I've explored some beliefs out of curiosity."
+      },
+      {
+        "value": 0,
+        "text": "No, I haven't explored such beliefs."
+      }
+    ]
+  },
+  {
+    "category": "existential intelligence",
+    "question": "Are you comfortable with the idea of uncertainty and the unknown, and do you often explore these concepts in your thinking?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm comfortable with uncertainty and explore it."
+      },
+      {
+        "value": 50,
+        "text": "I'm open to uncertainty but don't actively explore it."
+      },
+      {
+        "value": 0,
+        "text": "No, I find uncertainty unsettling."
+      }
+    ]
+  },
+  {
+    "category": "existential intelligence",
+    "question": "Do you often seek out literature, art, or media that delve into existential themes and explore the human condition?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm drawn to existential themes in literature and art."
+      },
+      {
+        "value": 50,
+        "text": "I find such themes interesting but don't always seek them out."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not particularly interested in existential themes."
+      }
+    ]
+  },
+  {
+    "category": "existential intelligence",
+    "question": "Can you describe your personal beliefs about the nature of reality and existence, even if they are still evolving?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I have well-defined beliefs about reality and existence."
+      },
+      {
+        "value": 50,
+        "text": "I have some beliefs but they are still evolving."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not sure about my beliefs regarding reality and existence."
+      }
+    ]
+  },
+  {
+    "category": "existential intelligence",
+    "question": "Do you often engage in deep introspection and ponder your role in the grand scheme of things?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I frequently engage in introspection."
+      },
+      {
+        "value": 50,
+        "text": "I engage in introspection occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't often engage in introspection."
+      }
+    ]
+  },
+  {
+    "category": "existential intelligence",
+    "question": "Do you enjoy exploring different perspectives and viewpoints on life and existence, even if they challenge your own beliefs?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm open to exploring different viewpoints."
+      },
+      {
+        "value": 50,
+        "text": "I'm open to exploring some viewpoints."
+      },
+      {
+        "value": 0,
+        "text": "No, I prefer to stick to my own beliefs."
+      }
+    ]
+  },
+  {
+    "category": "existential intelligence",
+    "question": "Have you ever found yourself contemplating the mysteries of the universe and pondering questions that have no definitive answers?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I often contemplate such mysteries."
+      },
+      {
+        "value": 50,
+        "text": "I contemplate them from time to time."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't often contemplate such mysteries."
+      }
+    ]
+  },
+  {
+    "category": "creative intelligence",
+    "question": "Do you often find yourself coming up with unique solutions to problems that others might not have considered?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I frequently come up with innovative solutions."
+      },
+      {
+        "value": 50,
+        "text": "I come up with creative solutions occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't often come up with unique solutions."
+      }
+    ]
+  },
+  {
+    "category": "creative intelligence",
+    "question": "Are you drawn to creative activities such as drawing, painting, writing, or crafting?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I enjoy engaging in creative activities."
+      },
+      {
+        "value": 50,
+        "text": "I engage in creative activities occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm not particularly interested in creative activities."
+      }
+    ]
+  },
+  {
+    "category": "creative intelligence",
+    "question": "Can you easily connect seemingly unrelated concepts and ideas to create something new and original?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm adept at making unique connections."
+      },
+      {
+        "value": 50,
+        "text": "I can make connections to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I struggle to make such connections."
+      }
+    ]
+  },
+  {
+    "category": "creative intelligence",
+    "question": "Do you enjoy brainstorming sessions and group discussions where new ideas are encouraged and explored?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I thrive in brainstorming sessions."
+      },
+      {
+        "value": 50,
+        "text": "I enjoy them occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't particularly enjoy brainstorming."
+      }
+    ]
+  },
+  {
+    "category": "creative intelligence",
+    "question": "Have you ever taken a novel approach to solving a problem, diverging from the conventional methods?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I've taken unconventional approaches."
+      },
+      {
+        "value": 50,
+        "text": "I've tried unconventional approaches occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I usually stick to conventional methods."
+      }
+    ]
+  },
+  {
+    "category": "creative intelligence",
+    "question": "Are you interested in experimenting with different artistic techniques or innovative technologies to create something new?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I enjoy experimenting with new techniques and technologies."
+      },
+      {
+        "value": 50,
+        "text": "I experiment occasionally."
+      },
+      {
+        "value": 0,
+        "text": "No, I prefer sticking to familiar techniques."
+      }
+    ]
+  },
+  {
+    "category": "creative intelligence",
+    "question": "Can you easily visualize scenarios that don't currently exist and imagine potential outcomes?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I can vividly imagine different scenarios."
+      },
+      {
+        "value": 50,
+        "text": "I can imagine scenarios to some extent."
+      },
+      {
+        "value": 0,
+        "text": "No, I have difficulty imagining different scenarios."
+      }
+    ]
+  },
+  {
+    "category": "creative intelligence",
+    "question": "Do you enjoy immersing yourself in creative projects, even if they require significant time and effort?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm passionate about creative projects."
+      },
+      {
+        "value": 50,
+        "text": "I enjoy creative projects but balance them with other activities."
+      },
+      {
+        "value": 0,
+        "text": "No, I don't invest much time in creative projects."
+      }
+    ]
+  },
+  {
+    "category": "creative intelligence",
+    "question": "Are you comfortable with ambiguity and uncertainty, often exploring new paths and embracing the unknown?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I'm comfortable with ambiguity and uncertainty."
+      },
+      {
+        "value": 50,
+        "text": "I'm open to uncertainty but prefer some structure."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm uncomfortable with ambiguity."
+      }
+    ]
+  },
+  {
+    "category": "creative intelligence",
+    "question": "Can you describe a time when you took a traditional concept and added a unique twist to it, resulting in a creative outcome?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I can provide several examples."
+      },
+      {
+        "value": 50,
+        "text": "I can think of an example or two."
+      },
+      {
+        "value": 0,
+        "text": "No, I can't recall such an example."
+      }
+    ]
+  },
+  {
+    "category": "dishonesty",
+    "question": "How do you react when faced with a situation where telling the truth might have negative consequences?",
+    "options": [
+      {
+        "value": 100,
+        "text": "I might consider not telling the truth if it avoids negative consequences."
+      },
+      {
+        "value": 50,
+        "text": "I tend to tell the truth, but there are exceptions."
+      },
+      {
+        "value": 0,
+        "text": "I always prioritize telling the truth, even if it leads to negative outcomes."
+      }
+    ]
+  },
+  {
+    "category": "dishonesty",
+    "question": "How often do you find yourself being completely truthful, even in small or insignificant matters?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Not always, I've told small lies to avoid inconvenience."
+      },
+      {
+        "value": 50,
+        "text": "Mostly, but I've occasionally stretched the truth."
+      },
+      {
+        "value": 0,
+        "text": "Always, I believe in being truthful in all situations."
+      }
+    ]
+  },
+  {
+    "category": "dishonesty",
+    "question": "How do you feel when you discover that someone has lied to you?",
+    "options": [
+      {
+        "value": 100,
+        "text": "I don't feel strongly about it, as lying is a common behavior."
+      },
+      {
+        "value": 50,
+        "text": "I feel uncomfortable, but I understand that people have their reasons."
+      },
+      {
+        "value": 0,
+        "text": "I feel deeply disappointed and hurt by dishonesty."
+      }
+    ]
+  },
+  {
+    "category": "dishonesty",
+    "question": "Have you ever lied to avoid getting into trouble or facing the consequences of your actions?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I've done it frequently to avoid trouble."
+      },
+      {
+        "value": 50,
+        "text": "Yes, I've done it a couple of times."
+      },
+      {
+        "value": 0,
+        "text": "No, I've always faced the consequences of my actions truthfully."
+      }
+    ]
+  },
+  {
+    "category": "dishonesty",
+    "question": "How important is trustworthiness and honesty to you in building and maintaining relationships?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Not very important, relationships can survive without complete honesty."
+      },
+      {
+        "value": 50,
+        "text": "Somewhat important, but there are other factors too."
+      },
+      {
+        "value": 0,
+        "text": "Very important, trust is the foundation of strong relationships."
+      }
+    ]
+  },
+  {
+    "category": "dishonesty",
+    "question": "Do you often find yourself embellishing stories or exaggerating details to make them more interesting?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I often add details to make stories more engaging."
+      },
+      {
+        "value": 50,
+        "text": "Occasionally, if it enhances the story."
+      },
+      {
+        "value": 0,
+        "text": "No, I prefer to stick to the truth in my stories."
+      }
+    ]
+  },
+  {
+    "category": "dishonesty",
+    "question": "How do you feel about telling white lies or half-truths to spare someone's feelings?",
+    "options": [
+      {
+        "value": 100,
+        "text": "I'm comfortable using white lies to maintain harmony."
+      },
+      {
+        "value": 50,
+        "text": "I've told white lies occasionally to avoid hurting someone."
+      },
+      {
+        "value": 0,
+        "text": "I avoid white lies and try to be honest even in sensitive situations."
+      }
+    ]
+  },
+  {
+    "category": "dishonesty",
+    "question": "Have you ever lied about your accomplishments or experiences to make yourself appear more impressive?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Yes, I regularly embellish my accomplishments."
+      },
+      {
+        "value": 50,
+        "text": "Yes, I've exaggerated a few times to impress others."
+      },
+      {
+        "value": 0,
+        "text": "No, I'm honest about my accomplishments and experiences."
+      }
+    ]
+  },
+  {
+    "category": "dishonesty",
+    "question": "How likely are you to admit your mistakes and take responsibility for them, even if it means facing consequences?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Not very likely, I prefer avoiding admitting mistakes."
+      },
+      {
+        "value": 50,
+        "text": "I'm willing to admit mistakes, but it depends on the situation."
+      },
+      {
+        "value": 0,
+        "text": "Very likely, I believe in owning up to my mistakes."
+      }
+    ]
+  },
+  {
+    "category": "dishonesty",
+    "question": "How would you describe your general attitude toward honesty and truthfulness in your daily life?",
+    "options": [
+      {
+        "value": 100,
+        "text": "Honesty is important, but occasional lies are acceptable."
+      },
+      {
+        "value": 50,
+        "text": "I value honesty but sometimes find it challenging."
+      },
+      {
+        "value": 0,
+        "text": "I prioritize honesty in every aspect of my life."
       }
     ]
   }
