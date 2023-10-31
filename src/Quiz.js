@@ -19,7 +19,8 @@ const Quiz = () => {
     const desiredOrder = [
         'boldness',
         'meanness',
-        'disinhibition',
+        'disinhibition',        
+        "dishonesty",
         'psychopathy',
         'linguistic',
         "linguistic intelligence",
@@ -32,7 +33,6 @@ const Quiz = () => {
         "naturalistic intelligence",
         "existential intelligence",
         "creative intelligence",
-        "dishonesty"
     ];
 
 
@@ -103,7 +103,7 @@ const Quiz = () => {
                 }
             }
             const psychopathy = (
-                parseInt(((result["boldness"] + result["meanness"] + result["disinhibition"]) / 3).toFixed(0))
+                parseInt(((result["boldness"] + result["meanness"] + result["disinhibition"] + result["dishonesty"]) / 4).toFixed(0))
             );
             result.psychopathy = psychopathy;
             categorizedQuestions.psychopathy = { total: psychopathy };
