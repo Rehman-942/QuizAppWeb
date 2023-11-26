@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import axios from "axios";
 import questions from "./data/data.json";
 import Result from "./Result";
 import "./styles/quiz.css";
@@ -124,11 +125,13 @@ const Quiz = () => {
             setShowResult(true);
             // https://quiz-app-server-lyart.vercel.app/api/saveResult
             // http://localhost:3001/api/saveResult
-            const res = await fetch('http://localhost:3001/api/saveResult', {
-                method: 'POST', 
-                body: JSON.stringify({ username, email, resultData: sortedQuestions }),
-                headers: { 'Content-Type': 'application/json' },
-            }).catch((error) => {
+            const res = await axios.post('http://localhost:3001/api/saveResult', { username, email, resultData: sortedQuestions }
+            // {
+                // method: 'POST', 
+                // body: JSON.stringify({ username, email, resultData: sortedQuestions }),
+                // headers: { 'Content-Type': 'application/json' },
+            // }
+            ).catch((error) => {
                 alert('Error:', error);
             });
             console.log('res', res);

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './styles/admin.css';
 import AdminResult from './adminResult';
 import Login from './login.js';
@@ -15,10 +16,14 @@ const Admin = () => {
     // Fetch results from the API when the component mounts
     // http://localhost:3001/api/getResults
     // https://quiz-app-server-lyart.vercel.app/api/getResults
-    fetch('http://localhost:3001/api/getResults')
-      .then((response) => response.json())
-      .then((data) => {
-        setData(data)
+    axios.get('http://localhost:3001/api/getResults')
+      // .then((response) => {
+      // console.log('response', response);
+        // response.json()
+      // })
+      .then((response) => {
+        console.log('response');
+        setData(response.data)
       }
       ) // Assuming the API returns results in the "results" field
       .catch((error) => console.error('Error fetching data:', error));
