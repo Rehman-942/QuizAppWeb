@@ -125,7 +125,7 @@ const Quiz = () => {
             setShowResult(true);
             // https://quiz-app-server-lyart.vercel.app/api/saveResult
             // http://localhost:3001/api/saveResult
-            const res = await axios.post('http://localhost:3001/api/saveResult', { username, email, resultData: sortedQuestions }
+            const res = await axios.post('/api/saveResult', { username, email, resultData: sortedQuestions }
             // {
                 // method: 'POST', 
                 // body: JSON.stringify({ username, email, resultData: sortedQuestions }),
