@@ -22,7 +22,7 @@ const Admin = () => {
         // response.json()
       // })
       .then((response) => {
-        console.log('response');
+        console.log('response', response);
         setData(response.data)
       }
       ) // Assuming the API returns results in the "results" field
