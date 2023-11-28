@@ -20,7 +20,7 @@ const Quiz = () => {
     const desiredOrder = [
         'boldness',
         'meanness',
-        'disinhibition',        
+        'disinhibition',
         "dishonesty",
         'psychopathy',
         'linguistic',
@@ -52,7 +52,7 @@ const Quiz = () => {
 
     useEffect(() => {
         // Check if this is the first page and questions have not been shuffled
-        if(!username || !email) navigate('/');
+        if (!username || !email) navigate('/');
 
         if (currentPage === 0 && !shuffledQuestionsRef.current) {
             // Shuffle and store the questions for the first page
@@ -125,12 +125,15 @@ const Quiz = () => {
             setShowResult(true);
             // https://quiz-app-server-lyart.vercel.app/api/saveResult
             // http://localhost:3001/api/saveResult
-            const res = await axios.post('https://crossorigin.me/https://test.yucatanblue.com:3001/api/saveResult', { username, email, resultData: sortedQuestions }
-            // {
+            const res = await axios.post('https://crossorigin.me/https://test.yucatanblue.com:3001/api/saveResult', {
+                headers: { "Access-Control-Allow-Origin": "*" }
+            }
+                , { username, email, resultData: sortedQuestions }
+                // {
                 // method: 'POST', 
                 // body: JSON.stringify({ username, email, resultData: sortedQuestions }),
                 // headers: { 'Content-Type': 'application/json' },
-            // }
+                // }
             ).catch((error) => {
                 alert('Error:', error);
             });

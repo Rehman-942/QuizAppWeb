@@ -16,10 +16,14 @@ const Admin = () => {
     // Fetch results from the API when the component mounts
     // http://localhost:3001/api/getResults
     // https://quiz-app-server-lyart.vercel.app/api/getResults
-    axios.get('https://crossorigin.me/https://test.yucatanblue.com:3001/api/getResults')
+    axios.get('https://crossorigin.me/https://test.yucatanblue.com:3001/api/getResults',
+      {
+        headers: { "Access-Control-Allow-Origin": "*" }
+      }
+    )
       // .then((response) => {
       // console.log('response', response);
-        // response.json()
+      // response.json()
       // })
       .then((response) => {
         console.log('response', response);
