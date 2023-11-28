@@ -16,13 +16,14 @@ const Admin = () => {
     // Fetch results from the API when the component mounts
     // http://localhost:3001/api/getResults
     // https://quiz-app-server-lyart.vercel.app/api/getResults
-    axios.get('/api/getResults')
+    fetch('/api/getResults')
       // .then((response) => {
       // console.log('response', response);
       // response.json()
       // })
-      .then((response) => {
+      .then(async (response) => {
         console.log('response', response);
+        console.log('response....', await response.json());
         setData(response.data)
       }
       ) // Assuming the API returns results in the "results" field
