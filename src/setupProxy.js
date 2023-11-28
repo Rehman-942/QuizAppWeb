@@ -1,6 +1,5 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
-
 module.exports = function (app) {
   app.use(
     "/api",
@@ -9,7 +8,8 @@ module.exports = function (app) {
       changeOrigin: true,
       pathRewrite: {
         '^/api/': '/'
-      }
+      },
+      secure: false // Disable SSL verification (use with caution, not recommended for production)
     })
   );
 };
