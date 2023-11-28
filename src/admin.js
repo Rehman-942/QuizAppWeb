@@ -17,14 +17,12 @@ const Admin = () => {
     // http://localhost:3001/api/getResults
     // https://quiz-app-server-lyart.vercel.app/api/getResults
     fetch('/api/getResults')
-      // .then((response) => {
-      // console.log('response', response);
-      // response.json()
-      // })
       .then(async (response) => {
-        console.log('response', response);
-        console.log('response....', await response.json());
-        setData(response.data)
+      console.log('response', await response.json());
+      })
+      .then((data) => {
+        console.log('data', data);
+        setData(data)
       }
       ) // Assuming the API returns results in the "results" field
       .catch((error) => console.error('Error fetching data:', error));
