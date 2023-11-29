@@ -1,15 +1,14 @@
-const { createProxyMiddleware } = require("http-proxy-middleware");
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
-module.exports = function (app) {
+module.exports = function(app) {
   app.use(
-    "/api",
+    '/api',
     createProxyMiddleware({
-      target: "http://localhost:3001",
+      target: 'http://test.yucatanblue.com:3001',
       changeOrigin: true,
       pathRewrite: {
         '^/api/': '/'
-      },
-      secure: false // Disable SSL verification (use with caution, not recommended for production)
+      }
     })
   );
 };
