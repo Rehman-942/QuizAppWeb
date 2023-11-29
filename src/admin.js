@@ -16,7 +16,7 @@ const Admin = () => {
     // Fetch results from the API when the component mounts
     // http://localhost:3001/api/getResults
     // https://quiz-app-server-lyart.vercel.app/api/getResults
-    fetch('https://test.yucatanblue.com:5001/api/getResults')
+    fetch('https://test.yucatanblue.com/backend/api/getResults')
       .then(async (response) => {
       console.log('response', await response.json());
       })
