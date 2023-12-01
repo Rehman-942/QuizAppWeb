@@ -18,10 +18,8 @@ const Admin = () => {
     // https://quiz-app-server-lyart.vercel.app/api/getResults
     fetch('/api/getResults')
       .then(async (response) => {
-      console.log('response', await response.json());
-      })
-      .then((data) => {
-        console.log('data', data);
+      return await response.json();
+      }).then((data) => {
         setData(data)
       }
       ) // Assuming the API returns results in the "results" field
